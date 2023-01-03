@@ -4,6 +4,7 @@ services:
     image: lscr.io/linuxserver/unifi-controller:latest
     platform: linux/arm/v7
     container_name: unifi-controller
+    privileged: true
     environment:
       - PUID=1000
       - PGID=1000
